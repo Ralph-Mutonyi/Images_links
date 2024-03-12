@@ -1,5 +1,30 @@
 body{
-    background-color:#ddd5d5;
+    background-color:#f0f7ec92;
     font-weight: 200;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+}
+
+nav{
+    display: flex;
+
+}
+nav a{
+    text-decoration: none;
+    color:#333;
+    padding:0.5rem 1rem;
+    font-weight:bold;
+}
+
+nav a :hover{
+    color:#000;
 }

@@ -1,3 +1,17 @@
+<!-- 
+1. Create an HTML file named image_links.html.
+2. Find or create three different images related to different topics (e.g., technology, nature, and food).
+3. Design a webpage with the following sections:
+    Home: Include a welcome message and a linked image related to technology.
+    Gallery: Display a grid of linked images related to nature.
+    Menu: List food items, and each item should be linked to an image related to that food.
+4. Use appropriate HTML tags for headings, paragraphs, lists, and images.
+
+5. Link each image to a relevant external website (use placeholder URLs if needed).
+
+6. Ensure the page is well-structured and easy to navigate.
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,18 +21,35 @@
         <link rel="stylesheet" type="text/css" href="images_links.css">
     </head>
     <body>
-        <nav>
-            <a href="#Home">Home</a>
-            <a href="#Gallery">Gallery</a>
-            <a href="#Food">Food</a>
-        </nav>
-        <section>
+        <header>
+            <nav>
+                <a href="#Home">Home</a>
+                <a href="#Gallery">Gallery</a>
+                <a href="#Food">Food</a>
+            </nav>
+        </header>
+       
+        <section id="Home">
             <h1>Welcome to the World of Data Science</h1>
-            <img src="images/datascience.webp" alt="data science info" width="800" height="400">
+            <a href="https://aws.amazon.com/what-is/data-science/#:~:text=Data%20science%20is%20the%20study,analyze%20large%20amounts%20of%20data." target="_blank" title="Click to learn more"><img src="images/datascience.webp" alt="data science info" width="800" height="400"></a>
         </section>
-        <section>
+        <section id="Gallery">
             <h1>Don't we all love us some Mother Nature!</h1>
-
+            <a href="https://www.britannica.com/place/Mount-Everest" target="_blank"><img src="images/Nature_1.jpg" alt ="Beautiful Mountain_side" width="600" height="400"></a>
+            <a href="https://www.kws.go.ke/" target="_blank"><img src="images/Nature_2.jpg" alt="Wildlife" width="600", height="400"></a>
+            <a href="https://www.unep.org/regions/asia-and-pacific/regional-initiatives/supporting-resource-efficiency/green-economy" target="_blank"><img src="images/Nature_3.jpg" alt="Green environment" width="600" height="400"></a>
+            <a href="https://ndnr.com/nature-cure/global-climate-change-and-naturopathic-medicine/" target="_blank"><img src="images/Nature_4.jpg" alt="Climate change" width="600" height="400"></a>
+        </section>
+        <section id="Food">
+            <h1>Gotta take care of the stomach</h1>
+            <h3>Click on your preffered food for more info!</h3>
+            <ul>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLasagna&psig=AOvVaw3yhjer5Cg1Tfndk1ah9VOI&ust=1710312365978000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJiXzpqQ7oQDFQAAAAAdAAAAABAJ" target="_blank"><li>Lasagna</li></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.foodandwine.com%2Frecipes%2Fclassic-cheese-pizza&psig=AOvVaw1T6cEbEqZHbE_iHRTURo3G&ust=1710312423359000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIDgjraQ7oQDFQAAAAAdAAAAABAE" target="_blank"><li>Piza</li></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.maggiarabia.com%2Fen%2Frecipes%2Fchicken-biryani%2F&psig=AOvVaw2rBNkqrf2TwU00Edi4eQiT&ust=1710312445032000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjzm8CQ7oQDFQAAAAAdAAAAABAE" target="_blank"><li>Biryani</li></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fzenaskitchen.com%2Fmy-mums-jollof-rice%2F&psig=AOvVaw0-8xvR2jjhEzwOmlgVtcti&ust=1710312491980000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCICU7taQ7oQDFQAAAAAdAAAAABAE" target="_blank"><li>Jolof Rice</li></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.recipetineats.com%2Fquesadilla%2F&psig=AOvVaw0aSywzWsKIFDtfxgmECbz3&ust=1710312521000000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKDat-SQ7oQDFQAAAAAdAAAAABAE" target="_blank"><li>quesadillas</li></a>
+            </ul>
         </section>
     </body>
 </html>
